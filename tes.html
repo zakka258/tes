@@ -1,0 +1,35 @@
+<html>
+ 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a {
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+ 
+        input {
+            width: 90%;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <h3>Gojek Deeplink Test</h3>
+ 
+    <p>Use link below to test whether your browser/webview can open Deeplink to Gojek app or not.</p>
+ 
+    <a href="gojek://" rel="noopener" target="_blank">
+        Click to open Gojek app
+    </a>
+ 
+    <p>Make sure you have Gojek app installed from App Store. When you click deeplink above, Gojek app should open. If not opening, something from your App/Browser/OS/Device must have blocking it.</p>
+ 
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>
+        eruda.init();
+    </script>
+</body>
+ 
+</html>
